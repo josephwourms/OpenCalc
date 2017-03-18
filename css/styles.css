@@ -18,6 +18,11 @@
     font-size: 1.5em;
 }
 
+.container {
+    padding: 0;
+    margin: 0;
+}
+
 #display {
     position: relative;
     width: 100%;
