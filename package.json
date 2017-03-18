@@ -1,5 +1,5 @@
 {
-  "name": "AngularJS Calculator",
+  "name": "open-calculator",
   "description": "A test app for learning AngularJS",
   "dependencies": {
     "angular": "^1.6.3",
