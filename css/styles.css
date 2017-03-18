@@ -23,12 +23,6 @@
     margin: 0;
 }
 
-#buttonArea {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
 #display {
     position: relative;
     width: 100%;
@@ -42,7 +36,7 @@
     text-align: right;
 }
 
-#displayText {
+.displayText {
     position: absolute;
     right: 15px;
     bottom: 0;
