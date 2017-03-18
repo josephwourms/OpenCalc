@@ -1,6 +1,7 @@
 {
   "name": "open-calculator",
   "description": "A test app for learning AngularJS",
+  "repository": "https://github.com/josephwourms/OpenCalc.git",
   "dependencies": {
     "angular": "^1.6.3",
     "bootstrap": "^4.0.0-alpha.6"
