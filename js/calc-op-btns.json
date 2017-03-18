@@ -1,0 +1,22 @@
+[
+    {
+        "value": "+",
+        "type": "op"
+    },
+    {
+        "value": "-",
+        "type": "op"
+    },
+    {
+        "value": "*",
+        "type": "op"
+    },
+    {
+        "value": "/",
+        "type": "op"
+    },
+    {
+        "value": "=",
+        "type": "op"
+    }
+]

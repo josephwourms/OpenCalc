@@ -1,0 +1,69 @@
+@font-face {
+    font-family: Electrolize-Regular;
+    src: url('../fonts/Electrolize-Regular.ttf');
+}
+
+@font-face {
+    font-family: Michroma;
+    src: url('../fonts/Michroma.tff');
+}
+
+@font-face {
+    font-family: RobotoMono-Regular;
+    src: url('../fonts/RobotoMono-Regular.ttf');
+}
+
+.btn {
+    font-family: RobotoMono-Regular, monospace;
+    font-size: 1.5em;
+}
+
+#display {
+    position: relative;
+    width: 100%;
+    height: 128px;
+    padding: 0 1em;
+    border-radius: 0;
+    border-bottom: 2px solid #5A5;
+    font-family: RobotoMono-Regular, monospace;
+    font-size: 1.5em;
+    background-color: #EEE;
+    text-align: right;
+}
+
+#displayText {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+}
+
+.btn {
+    width: 100%;
+    height: 64px;
+}
+
+.btn-square {
+    border-radius: 0;
+}
+
+.btn-num {
+    background-color: #777;
+    color: #FFF;
+}
+
+.btn-num:hover {
+    background-color: #999;
+}
+
+.btn-op {
+    background-color: #BADA55;
+    color: #FFF;
+}
+
+.btn-op:hover {
+    background-color: #98B833;
+}
+
+.btn-op-panel {
+    border-left: 2px solid #98B822;
+}

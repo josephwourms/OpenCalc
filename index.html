@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css" />
+        
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="/css/styles.css" />
+        
+        <!--AngularJS-->
+        <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+        
+        <!-- Modules -->
+        <script type="text/javascript" src="/js/app.module.js"></script>
+        
+        <!--Controllers & Components-->
+        <script type="text/javascript" src="/js/calc.controller.js"></script>
+        <script type="text/javascript" src="/js/calc-btn-num/calc-btn-num.component.js"></script>
+        <script type="text/javascript" src="/js/calc-btn-num/calc-btn-num.controller.js"></script>
+        <script type="text/javascript" src="/js/calc-btn-op/calc-btn-op.component.js"></script>
+        <script type="text/javascript" src="/js/calc-btn-op/calc-btn-op.controller.js"></script>
+        <script type="text/javascript" src="/js/calc-display/calc-display.component.js"></script>
+        <script type="text/javascript" src="/js/calc-display/calc-display.controller.js"></script>
+        
+        <!--Jquery, Tether & Bootstrap scripts-->
+        <script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="/node_modules/tether/dist/js/tether.js"></script>
+        <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        
+    </head>
+    
+    <body ng-app="calcApp" ng-controller="calcCtrl as calc">
+        
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-12">
+                    <calc-display></calc-display>
+                </div>
+                
+            </div>
+            
+            <div class="row no-gutters">
+                <div class="col-9">
+                    <div class="row no-gutters">
+                        <div class="col-4" ng-repeat="n in [7, 8, 9]">
+                            <calc-btn-num value="{{n}}"></calc-btn-num>
+                        </div>
+                    </div>
+                    
+                    <div class="row no-gutters">
+                        <div class="col-4" ng-repeat="n in [4, 5, 6]">
+                            <calc-btn-num value="{{n}}"></calc-btn-num>
+                        </div>
+                    </div>
+                    
+                    <div class="row no-gutters">
+                        <div class="col-4" ng-repeat="n in [1, 2, 3]">
+                            <calc-btn-num value="{{n}}"></calc-btn-num>
+                        </div>
+                    </div>
+                    
+                    <div class="row no-gutters">
+                        <div class="col-6" ng-repeat="n in ['.', 0]">
+                            <calc-btn-num value="{{n}}"></calc-btn-num>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="btn-op-panel">
+                        <div ng-repeat="n in ['\u002B', '\u002D', '\u00D7', '\u00F7']">
+                            <calc-btn-op value="{{n}}"></calc-btn-op>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+        </div>
+        
+    </body>
+    
+</html>
