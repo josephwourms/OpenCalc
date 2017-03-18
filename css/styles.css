@@ -23,6 +23,12 @@
     margin: 0;
 }
 
+#buttonArea {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 #display {
     position: relative;
     width: 100%;
